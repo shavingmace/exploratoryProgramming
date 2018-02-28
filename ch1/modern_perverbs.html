@@ -38,9 +38,11 @@ a {
 var t = 0;
 // All but the last character ends up as the beginning of the output.
 // The last character is tacked onto the very end.
-var left = ["It’s five o’clock.", "There’s a party —.", "All roads lead.", "Welcome!", "Keep your data.", "The road goes.", "The sun never sets.", "There’s no place like…", "Can one simply walk?", "No man is.", "Right or wrong,.", "Tell it.", "The Internet is."];
+var pre_left = ["공산", "무정부", '권위', '민주', '하루히', '애니프사', '여성', '이기', '인종', '민족', '자유', '사회' ];
+var left = []
+pre_left.forEach((elem) => {left.push(elem+"주의자의.")})
 // This ends up as the end of the output, except for the very last character.
-var right = ["somewhere", "in my pants", "to Rome", "to the jungle", "in the Cloud", "ever ever on", "on the British Empire", "home", "into Mordor", "an island", "my country", "to the hand", "a series of tubes"];
+var right = ['라이트노벨', '문학', '비디오게임', '티비쇼', '로드무비', '풀드포크', '똥', '사랑', '행복', '우울', '죽음', '성교', '구토', '철학', '마법', '사냥', '식민주의', '정치학', '사회학', '경제학'];
 function rand_range(max) {
     "use strict";
     return Math.floor(Math.random() * (max + 1));
